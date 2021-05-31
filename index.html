@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta content="width=device-width, initial-scale=1" name="viewport" />
+     <link href="responsive.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM </title>
+
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title"><u>Bookorama</u></h1>
+          <p>Books for Good</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." >
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+        <!-- <a href="https://www.youtube.com/watch?v=ndz6iH6o1ms&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=9" target="_blank">Click here</a> -->
+	    	<ul>
+	    		<li>
+	    			<span class="name">Name of the Wind</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Wise Man's Fear</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Kafka on the Shore</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Master and the Margarita</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+
+	    	</ul>
+	    </div>
+      <form id="fun">
+        <input type="checkbox" id="hide">
+        <label for="hide">Hide all books</label>
+      </form>
+	    <form id="add-book">
+	    	<input type="text" placeholder="Add a book..." class="resizedTextbox" />
+	    	<button>Add</button>
+	    </form>
+
+      <div id="tabbed-content">
+          <ul class="tabs">
+            <li data-target="#about" class="active">About</li>
+            <li data-target="#contact">Contact</li>
+          </ul>
+          <div class="panel active" id="about">
+            <p>Content for about tab...</p>
+            <p>Nice and logical mind boggling books to get your eyes down with mind searching and analizing.</p>
+          </div>
+          <div class="panel" id="contact">
+            <p>Content for contact tab...</p>
+            <p>Name: Bookisha Shah <br> Email-id: bookisha2002@gmail.com</p>
+          </div>
+        </div>
+      </div>
+        <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+<!-- TO KNOW THE USE OF TOOGLE -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Web Page Design</title>
+
+<style type="text/css">
+.class1{
+    float:left;margin:10px;background:#09C;width:100px;height:100px;cursor:pointer;
+}
+.class2{
+    float:left;margin:10px;background:green;width:100px;height:100px;cursor:pointer;
+}
+</style>
+<script>
+    // function toggleClass(e)
+    // {
+    //     if(e.className=="class1")
+    //         e.className="class2";
+    //     else
+    //         e.className="class1";
+    // }
+
+
+    function toggleClass(e1)
+    {
+        var kids=document.getElementById('menu1').children;
+        for(let i=0;i<kids.length;i++)
+        kids[i].className="class1";
+        e1.className="class2";
+    }
+</script>
+</head>
+<body>
+<!--<div class="class1" onclick="toggleClass(this)"></div>-->
+<!--<div class="class1" onclick="toggleClass(this)"></div>-->
+<!--<div class="class1" onclick="toggleClass(this)"></div>-->
+<!--<div class="class1" onclick="toggleClass(this)"></div>-->
+
+
+<!-- <div id="menu1">
+<div class="class2" onclick="toggleClass(this)"></div>
+<div class="class1" onclick="toggleClass(this)"></div>
+<div class="class1" onclick="toggleClass(this)"></div>
+<div class="class1" onclick="toggleClass(this)"></div>
+</div>
+</body>
+</html> -->
